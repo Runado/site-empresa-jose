@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberFlow - Sistema de Gestão para Barbearia</title>
+    <meta name="description" content="Sistema de gestão completo para barbearia: agendamento, controle financeiro, gestão de clientes e muito mais. Experimente grátis!" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons (using Feather Icons for lightweight icons) -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon" data-feather="scissors"></span>
+                    <span class="logo-text">BarberFlow</span>
+                </a>
+                <nav class="nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#hero" class="nav-link">Início</a></li>
+                        <li><a href="#problemas" class="nav-link">Problemas</a></li>
+                        <li><a href="#solucao" class="nav-link">Solução</a></li>
+                        <li><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+                        <li><a href="#planos" class="nav-link">Planos</a></li>
+                        <li><a href="#whatsapp" class="nav-link">WhatsApp</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-mobile" id="btn-mobile" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false">
+                    <span data-feather="menu"></span>
+                </button>
+                <a href="#planos" class="btn-primary">Começar grátis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transforme sua barbearia com tecnologia feita para barbeiros brasileiros</h1>
+                <p class="hero-subtitle">
+                    Sistema de gestão completo que organiza agendamentos, clientes, finanças e muito mais, tudo integrado com WhatsApp para você focar no que realmente importa: cortar cabelo e atender bem seus clientes.
+                </p>
+                <div class="hero-actions">
+                    <a href="#planos" class="btn-primary">Começar agora</a>
+                    <a href="#demo" class="btn-secondary">Ver demonstração</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for dashboard mockup -->
+                    <div class="mockup-frame">
+                        <div class="mockup-screen">
+                            <!-- We'll add a simple representation of the dashboard -->
+                            <div class="mockup-content">
+                                <h3>Dashboard BarberFlow</h3>
+                                <p>Visualize sua agenda, receita e clientes em tempo real</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="problems" id="problemas">
+        <div class="container">
+            <h2 class="section-title">Os desafios que você enfrenta toda dia</h2>
+            <p class="section-subtitle">
+                Sem um sistema adequado, sua barbearia perde tempo, dinheiro e clientes. Conheça os problemas mais comuns:
+            </p>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon" data-feather="alert-triangle"></div>
+                    <h3>Agenda desorganizada</h3>
+                    <p>Perda de horários, oublos de agendamento e dificuldade em visualizar a disponibilidade em tempo real.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon" data-feather="user-x"></div>
+                    <h3>Cliente insatisfeito</h3>
+                    <p>Falta de histórico, dificuldade em lembrar preferências e comunicação inadequada levando à perda de fidelidade.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon" data-feather="dollar-sign"></div>
+                    <h3>Controle financeiro precário</h3>
+                    <p>Dificuldade em controlar receitas, despesas, comissões e falta de relatórios claros para tomada de decisão.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon" data-feather="message-circle"></div>
+                    <h3>Comunicação ineficiente</h3>
+                    <p>Dependência de lembretes manuais, falta de confirmação automática e dificuldade em atender pelo WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Solution Section -->
+    <section class="solution" id="solucao">
+        <div class="container">
+            <h2 class="section-title">A solução feita para barbearias brasileiras</h2>
+            <p class="section-subtitle">
+                BarberFlow foi criado pensando nas necessidades específicas do seu negócio, com interface simples e recursos poderosos.
+            </p>
+            <div class="solution-features">
+                <div class="feature">
+                    <div class="feature-icon" data-feather="check-circle"></div>
+                    <h3>Tudo em um só lugar</h3>
+                    <p>Gerencie agendamentos, clientes, finanças e equipe a partir de um painel intuitivo e acessível de qualquer dispositivo.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon" data-feather="clock"></div>
+                    <h3>Agendamento 24/7</h3>
+                    <p>Seus clientes podem agendar horários a qualquer hora pelo site ou WhatsApp, reduzindo perdas e aumentando a ocupação da sua agenda.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon" data-feather="settings"></div>
+                    <h3>Personalize como quiser</h3>
+                    <p>Adapte o sistema aos seus horários, serviços, preços e regras de comissão. Seu negócio, suas regras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Demonstration Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2 class="section-title">Veja como é simples usar o BarberFlow</h2>
+            <p class="section-subtitle">
+                Nossa interface foi projetada para ser intuitiva, com aprendizado rápido e foco na usabilidade para barbeiros e donos de barbearia.
+            </p>
+            <div class="demo-slider">
+                <!-- We'll create a simple slider with 3 slides -->
+                <div class="demo-slide active">
+                    <img src="assets/demo1.png" alt="Tela de agendamento" class="demo-image">
+                    <div class="demo-content">
+                        <h3>Agendamento fácil</h3>
+                        <p>Visualize a agenda por dia, semana ou mês. Arraste e solte para remarcar horários com facilidade.</p>
+                    </div>
+                </div>
+                <div class="demo-slide">
+                    <img src="assets/demo2.png" alt="Tela de clientes" class="demo-image">
+                    <div class="demo-content">
+                        <h3>Histórico completo do cliente</h3>
+                        <p>Acesse informações de visitas anteriores, preferências de corte, produtos utilizados e muito mais.</p>
+                    </div>
+                </div>
+                <div class="demo-slide">
+                    <img src="assets/demo3.png" alt="Tela financeira" class="demo-image">
+                    <div class="demo-content">
+                        <h3>Controle financeiro claro</h3>
+                        <p>Veja receitas, despesas, lucro líquido e comissões da equipe em tempo real. Exporte relatórios para o seu contador.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-nav">
+                <button class="demo-nav-btn prev" data-feather="chevron-left"></button>
+                <div class="demo-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="demo-nav-btn next" data-feather="chevron-right"></button>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Functionalities Section -->
+    <section class="funcionalidades" id="funcionalidades">
+        <div class="container">
+            <h2 class="section-title">Funcionalidades que fazem a diferença</h2>
+            <p class="section-subtitle">
+                Cada recurso foi desenvolvido para resolver um problema específico da sua barbearia, aumentando sua produtividade e lucro.
+            </p>
+            <div class="funcionalidades-grid">
+                <div class="func-card">
+                    <div class="func-icon" data-feather="users"></div>
+                    <h3>Gestão de Clientes</h3>
+                    <p>Cadastro completo com histórico de visitas, preferências, contato e valor gasto.</p>
+                </div>
+                <div class="func-card">
+                    <div class="func-icon" data-feather="calendar"></div>
+                    <h3>Agendamento Inteligente</h3>
+                    <p>Visualização por dia, semana ou mês. Bloqueio de horários, serviços personalizados e lembretes automáticos.</p>
+                </div>
+                <div class="func-card">
+                    <div class="func-icon" data-feather="user-plus"></div>
+                    <h3>Gestão de Equipe</h3>
+                    <p>Controle de comissões, horários de trabalho, especialidades e performance de cada barbeiro.</p>
+                </div>
+                <div class="func-card">
+                    <div class="func-icon" data-feather="bar-chart-2"></div>
+                    <h3>Relatórios e Métricas</h3>
+                    <p>Receita por período, ticket médio, retorno de clientes e muito mais para decisões baseadas em dados.</p>
+                </div>
+                <div class="func-card">
+                    <div class="func-icon" data-feather="credit-card"></div>
+                    <h3>Controle Financeiro</h3>
+                    <p>Fluxo de caixa, contas a pagar e receber, integração com cartões e dinheiro, fechamento de caixa simplificado.</p>
+                </div>
+                <div class="func-card">
+                    <div class="func-icon" data-feather="message-square"></div>
+                    <h3>Integração WhatsApp</h3>
+                    <p>Confirmação de agendamentos, lembretes, promoções e atendimento automatizado via chatbot (plano Premium e Pro).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- WhatsApp / Chatbot Section -->
+    <section class="whatsapp" id="whatsapp">
+        <div class="container">
+            <h2 class="section-title">Agendamento automático pelo WhatsApp</h2>
+            <p class="section-subtitle">
+                Com o chatbot integrado do BarberFlow, seus clientes podem agendar, remarcar ou cancelar horários diretamente pelo WhatsApp, 24 horas por dia.
+            </p>
+            <div class="whatsapp-content">
+                <div class="whatsapp-text">
+                    <h3>Como funciona o chatbot WhatsApp?</h3>
+                    <ol>
+                        <li>Cliente envia uma mensagem para o número da sua barbearia no WhatsApp</li>
+                        <li>Chatbot entende a solicitação e apresenta os serviços disponíveis</li>
+                        <li>Cliente escolhe o serviço, barbeiro e horário desejado</li>
+                        <li>Agendamento é confirmado automaticamente e registrado no sistema</li>
+                        <li>Cliente recebe confirmação e lembretes antes do atendimento</li>
+                    </ol>
+                    <p><strong>Benefícios:</strong> Redução de faltas, aumento da ocupação da agenda, atendimento rápido e menos trabalho manual para você e sua equipe.</p>
+                </div>
+                <div class="whatsapp-image">
+                    <!-- Placeholder for WhatsApp chat mockup -->
+                    <div class="mockup-whatsapp">
+                        <div class="mockup-header">
+                            <div class="mockup-avatar" data-feather="user"></div>
+                            <div class="mockup-info">
+                                <span>Barbearia Exemplo</span>
+                                <small>online</small>
+                            </div>
+                        </div>
+                        <div class="mockup-messages">
+                            <div class="message received">Oi! Gostaria de agendar um corte de cabelo.</div>
+                            <div class="message sent">Claro! Vamos agendar seu horário. Qual serviço você deseja?</div>
+                            <div class="message received">Corte de cabelo e barba, por favor.</div>
+                            <div class="message sent">Perfeito! Agora escolha um barbeiro disponível:</div>
+                            <!-- More messages would go here -->
+                        </div>
+                        <div class="mockup-input">
+                            <input type="text" placeholder="Digite sua mensagem...">
+                            <button data-feather="send"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#planos" class="btn-primary mt-lg">Quero o chatbot para minha barbearia</a>
+        </div>
+    </section>
+</section>
+
+    <!-- Plans Comparison Section -->
+    <section class="planos" id="planos">
+        <div class="container">
+            <h2 class="section-title">Escolha o plano ideal para sua barbearia</h2>
+            <p class="section-subtitle">
+                Todos os planos incluem acesso completo ao sistema, suporte e atualizações. Escolha aquele que melhor se adapta ao tamanho e necessidades do seu negócio.
+            </p>
+            <div class="planos-cards">
+                <!-- Standard Plan -->
+                <div class="plano-card">
+                    <div class="plano-header">
+                        <h3>Standard</h3>
+                        <p class="plano-price">R$ 59,90<span>/mês</span></p>
+                    </div>
+                    <div class="plano-body">
+                        <ul class="plano-features">
+                            <li><span data-feather="check"></span>Agendamento e gestão de clientes</li>
+                            <li><span data-feather="check"></span>Controle básico de finanças</li>
+                            <li><span data-feather="check"></span>Gestão de até 3 barbeiros</li>
+                            <li><span data-feather="check"></span>Relatórios essenciais</li>
+                            <li><span data-feather="check"></span>Suporte por e-mail</li>
+                            <li><span data-feather="x"></span>Chatbot WhatsApp</li>
+                            <li><span data-feather="x"></span>Usuários ilimitados</li>
+                            <li><span data-feather="x"></span>Reuniões 1:1 com a equipe</li>
+                        </ul>
+                    </div>
+                    <a href="#signup" class="btn-plano">Escolher este plano</a>
+                </div>
+                <!-- Premium Plan -->
+                <div class="plano-card destacado">
+                    <div class="plano-header">
+                        <h3>Premium</h3>
+                        <p class="plano-price">R$ 99,90<span>/mês</span></p>
+                        <span class="badge badge-accent badge-sm">Mais popular</span>
+                    </div>
+                    <div class="plano-body">
+                        <ul class="plano-features">
+                            <li><span data-feather="check"></span>Tudo do Standard</li>
+                            <li><span data-feather="check"></span>Chatbot WhatsApp integrado</li>
+                            <li><span data-feather="check"></span>Lembretes automáticos por WhatsApp</li>
+                            <li><span data-feather="check"></span>Gestão de até 10 barbeiros</li>
+                            <li><span data-feather="check"></span>Relatórios avançados</li>
+                            <li><span data-feather="check"></span>Suporte prioritário</li>
+                            <li><span data-feather="x"></span>Usuários ilimitados</li>
+                            <li><span data-feather="x"></span>Reuniões 1:1 com a equipe</li>
+                        </ul>
+                    </div>
+                    <a href="#signup" class="btn-plano">Escolher este plano</a>
+                </div>
+                <!-- Pro Plan -->
+                <div class="plano-card">
+                    <div class="plano-header">
+                        <h3>Pro</h3>
+                        <p class="plano-price">R$ 139,90<span>/mês</span></p>
+                    </div>
+                    <div class="plano-body">
+                        <ul class="plano-features">
+                            <li><span data-feather="check"></span>Tudo do Premium</li>
+                            <li><span data-feather="check"></span>Usuários ilimitados para barbeiros</li>
+                            <li><span data-feather="check"></span>Reuniões 1:1 mensais com nossa equipe</li>
+                            <li><span data-feather="check"></span>Acesso antecipado a novas funcionalidades</li>
+                            <li><span data-feather="check"></span>Consultoria de negócios incluída</li>
+                            <li><span data-feather="check"></span>Suporte dedicado</li>
+                        </ul>
+                    </div>
+                    <a href="#signup" class="btn-plano">Escolher este plano</a>
+                </div>
+            </div>
+            <p class="planos-note">*Todos os valores em reais brasileiros. Planos cobrados mensalmente. Cancelamento a qualquer momento.</p>
+        </div>
+    </section>
+</section>
+
+    <!-- Pro Differencial Section -->
+    <section class="pro-diferencial" id="pro">
+        <div class="container">
+            <h2 class="section-title">Seja um parceiro de negócio com o plano Pro</h2>
+            <p class="section-subtitle">
+                No plano Pro, você não é apenas um cliente - você se torna um parceiro na evolução do BarberFlow.
+            </p>
+            <div class="pro-diferencial-content">
+                <div class="pro-diferencial-text">
+                    <h3>Participação ativa no desenvolvimento</h3>
+                    <p>Como cliente Pro, você terá direito a reuniões 1:1 mensais com nossa equipe de produto para:</p>
+                    <ul class="pro-beneficios">
+                        <li><span data-feather="check"></span>Sugerir novas funcionalidades baseadas nas necessidades específicas da sua barbearia</li>
+                        <li><span data-feather="check"></span>Testar em primeira mão novas funcionalidades antes do lançamento oficial</li>
+                        <li><span data-feather="check"></span>Influenciar diretamente o roadmap de desenvolvimento do BarberFlow</li>
+                        <li><span data-feather="check"></span>Receber consultoria personalizada para otimizar o uso do sistema no seu negócio</li>
+                    </ul>
+                    <p><em>Importante: As reuniões são para discussão e alinhamento de necessidades. Nenhuma alteração é garantida de ser implementada, mas garantimos que seu feedback será ouvido e considerado seriamente em nosso processo de desenvolvimento.</em></p>
+                </div>
+                <div class="pro-diferencial-image">
+                    <!-- Placeholder for partnership illustration -->
+                    <div class="partnership-illustration">
+                        <div class="handshake" data-feather="handshake"></div>
+                        <p>Parceria para crescimento mútuo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Benefits Section -->
+    <section class="beneficios" id="beneficios">
+        <div class="container">
+            <h2 class="section-title">Resultados que você pode esperar</h2>
+            <p class="section-subtitle">
+                Barbearias que adotam o BarberFlow geralmente veem melhorias significativas em diversos aspectos do negócio.
+            </p>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <div class="beneficio-icon" data-feather="trending-up"></div>
+                    <h3>+30% de ocupação da agenda</h3>
+                    <p>Com agendamento 24/7 e lembretes automáticos, você reduz faltas e aproveita melhor seus horários disponíveis.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon" data-feather="dollar-sign"></div>
+                    <h3>+25% de aumento no ticket médio</h3>
+                    <p>Histórico de clientes permite oferecer serviços complementares e personalizar o atendimento.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon" data-feather="user-check"></div>
+                    <h3>-50% de tempo em tarefas administrativas</h3>
+                    <p>Automatize agendamentos, lembretes e controle financeiro para focar no atendimento e no corte.</p>
+                </div>
+                <div class="beneficio-card">
+                    <div class="beneficio-icon" data-feather="heart"></div>
+                    <h3>Melhoria na satisfação do cliente</h3>
+                    <p>Atendimento personalizado, lembretes pontuais e facilidade de reagendamento aumentam a fidelização.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas frequentes</h2>
+            <p class="section-subtitle">
+                Esclarecemos as dúvidas mais comuns sobre o BarberFlow e nosso sistema de gestão para barbearia.
+            </p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-texto">Preciso saber usar computador para usar o BarberFlow?</span>
+                        <span class="faq-icon" data-feather="chevron-down"></span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Não! Nosso sistema foi projetado para ser simples e intuitivo. Se você consegue usar um smartphone, consegue usar o BarberFlow. Oferecemos tutoriais em vídeo e suporte para ajudar nos primeiros passos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-texto">O sistema funciona em qualquer celular ou computador?</span>
+                        <span class="faq-icon" data-feather="chevron-down"></span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! O BarberFlow é acessível via navegador web, funcionando em qualquer dispositivo com conexão à internet - seja desktop, notebook, tablet ou smartphone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-texto">Meus dados estão seguros?</span>
+                        <span class="faq-icon" data-feather="chevron-down"></span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim, levamos a segurança muito a sério. Usamos criptografia SSL para todas as transmissões de dados, backups diários e servidores com proteção avançada contra invasões.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-texto">Posso testar antes de contratar?</span>
+                        <span class="faq-icon" data-feather="chevron-down"></span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Claro! Oferece um período de teste gratuito de 7 dias para você experimentar todas as funcionalidades sem compromisso. Não é necessário cartão de crédito para iniciar o teste.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-texto">Como funciona o suporte?</span>
+                        <span class="faq-icon" data-feather="chevron-down"></span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Oferecemos suporte por e-mail e WhatsApp para todos os planos. Nos planos Premium e Pro, o suporte é prioritário com tempo de resposta reduzido. Além disso, temos uma base de conhecimento com tutoriais e vídeos instrucionais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Pronto para transformar sua barbearia?</h>
+            <p>Comece agora com nosso período de teste gratuito e descubra por que centenas de barbeiros já escolheram o BarberFlow.</p>
+            <a href="#signup" class="btn-primary btn-lg">Começar teste gratuito</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</script>
+    
+    <!-- Signup Section (Modal-like) -->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-text">
+                    <h2>Experimente o BarberFlow gratuitamente por 7 dias</h2>
+                    <p>Sem cartão de crédito, sem compromisso. Cancela quando quiser.</p>
+                </div>
+                <div class="signup-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="signup-name">Nome completo</label>
+                            <input type="text" id="signup-name" name="name" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">E-mail</label>
+                            <input type="email" id="signup-email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-phone">Telefone (WhatsApp)</label>
+                            <input type="tel" id="signup-phone" name="phone" required placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-business">Nome da barbearia</label>
+                            <input type="text" id="signup-business" name="business" required placeholder="Nome da sua barbearia">
+                        </div>
+                        <button type="submit" class="btn-primary btn-lg">Começar teste gratuito</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <span class="logo-icon" data-feather="scissors"></span>
+                        <span class="logo-text">BarberFlow</span>
+                    </a>
+                    <p>Sistema de gestão feito para barbearias brasileiras</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Produto</h3>
+                        <ul>
+                            <li><a href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a href="#whatsapp">WhatsApp Chatbot</a></li>
+                            <li><a href="#planos">Planos</a></li>
+                            <li><a href="#demo">Demonstração</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Empresa</h3>
+                        <ul>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+</footer>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        // Mobile menu toggle
+        const btnMobile = document.getElementById('btn-mobile');
+        const mainNav = document.getElementById('main-nav');
+
+        function toggleMenu() {
+            const isOpen = btnMobile.getAttribute('aria-expanded') === 'true' || false;
+            btnMobile.setAttribute('aria-expanded', !isOpen);
+            mainNav.classList.toggle('nav-active');
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+        mainNav.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                const isOpen = btnMobile.getAttribute('aria-expanded') === 'true' || false;
+                if (isOpen) {
+                    toggleMenu();
+                }
+            }
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+                
+                // Update icon
+                const icon = question.querySelector('.faq-icon');
+                if (faqItem.classList.contains('active')) {
+                    icon.setAttribute('data-feather', 'chevron-up');
+                } else {
+                    icon.setAttribute('data-feather', 'chevron-down');
+                }
+                feather.replace();
+            });
+        });
+
+        // Simple demo slider (for demonstration purposes)
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.demo-slide');
+        const dots = document.querySelectorAll('.demo-dots span');
+        const prevBtn = document.querySelector('.demo-nav-btn.prev');
+        const nextBtn = document.querySelector('.demo-nav-btn.next');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // Auto advance slides every 5 seconds
+        let slideInterval = setInterval(nextSlide, 5000);
+
+        // Pause on hover
+        const demoSlider = document.querySelector('.demo-slider');
+        demoSlider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        demoSlider.addEventListener('mouseleave', () => slideInterval = setInterval(nextSlide, 5000));
+
+        // Initialize first slide
+        showSlide(0);
+    </script>
+</body>
+</html>
+                        <ul>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Segurança</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Follow us</h3>
+                        <div class="social-links">
+                            <a href="#" data-feather="instagram"></a>
+                            <a href="#" data-feather="youtube"></a>
+                            <a href="#" data-feather="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BarberFlow. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
