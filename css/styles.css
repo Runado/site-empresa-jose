@@ -2851,7 +2851,339 @@ body {
     }
 }
 
-/* Footer */
+/* Impacto Section */
+.impacto {
+    padding: var(--spacing-xxxxl) 0;
+    background: var(--color-background);
+    position: relative;
+}
+
+.impacto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-accent), var(--color-secondary-light));
+    border-radius: 0 0 var(--border-radius-pill) var(--border-radius-pill);
+    opacity: 0.6;
+}
+
+.impacto-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xxxl);
+}
+
+.impacto-header .section-title {
+    margin-bottom: var(--spacing-md);
+}
+
+.impacto-header .section-subtitle {
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+}
+
+.impacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xxxl);
+}
+
+/* Base card styles */
+.impacto-card {
+    position: relative;
+    background: var(--color-surface);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: var(--transition-slow);
+    display: flex;
+    flex-direction: column;
+}
+
+.impacto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-border-light);
+}
+
+/* Featured cards (Organização, Crescimento) */
+.impacto-card--featured {
+    border-color: var(--color-secondary);
+}
+
+.impacto-card--featured:hover {
+    border-color: var(--color-secondary);
+    box-shadow: 0 12px 32px rgba(58, 86, 212, 0.15);
+}
+
+.impacto-card--featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+}
+
+/* Reverse card (Profissionalismo) */
+.impacto-card--reverse {
+    flex-direction: column-reverse;
+    border-color: var(--color-accent);
+}
+
+.impacto-card--reverse:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 12px 32px rgba(212, 172, 13, 0.15);
+}
+
+.impacto-card--reverse::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+}
+
+/* Premium card (Automação) */
+.impacto-card--premium {
+    border-color: var(--color-secondary);
+    background: linear-gradient(180deg, rgba(58, 86, 212, 0.02) 0%, var(--color-surface) 100%);
+}
+
+.impacto-card--premium:hover {
+    border-color: var(--color-secondary);
+    box-shadow: 0 12px 32px rgba(58, 86, 212, 0.15);
+}
+
+.impacto-card--premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-secondary) 0%, #25D366 100%);
+}
+
+/* Visual section (icon + badge) */
+.impacto-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    background: var(--color-surface-alt);
+    border-bottom: 1px solid var(--color-border-light);
+    position: relative;
+    min-height: 14rem;
+}
+
+.impacto-card--reverse .impacto-visual {
+    border-bottom: none;
+    border-top: 1px solid var(--color-border-light);
+}
+
+.impacto-icon-wrapper {
+    width: 6.4rem;
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    border-radius: var(--border-radius-lg);
+    color: var(--color-surface);
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+}
+
+.impacto-card:hover .impacto-icon-wrapper {
+    transform: scale(1.05);
+}
+
+.impacto-icon-wrapper svg {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+/* Color variations for icons */
+.impacto-card--featured .impacto-icon-wrapper {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+}
+
+.impacto-card--reverse .impacto-icon-wrapper {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
+}
+
+.impacto-card--premium .impacto-icon-wrapper {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #25D366 100%);
+}
+
+/* Badges */
+.impacto-badge {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: var(--spacing-xxs) var(--spacing-sm);
+    border-radius: var(--border-radius-pill);
+    color: var(--color-surface);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    box-shadow: var(--shadow-sm);
+}
+
+.impacto-badge--premium {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #25D366 100%);
+}
+
+/* Content section */
+.impacto-content {
+    flex: 1;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.impacto-title {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.impacto-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+    flex: 1;
+}
+
+.impacto-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.impacto-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.impacto-details li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.impacto-details li svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+    color: var(--color-success);
+}
+
+/* CTA */
+.impacto-cta {
+    text-align: center;
+    padding: var(--spacing-xxl);
+    background: var(--color-surface);
+    border-radius: var(--border-radius-xl);
+    border: 1px solid var(--color-border);
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.impacto-cta-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.btn-lg {
+    padding: var(--spacing-md) var(--spacing-xxl);
+    font-size: var(--font-size-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .impacto {
+        padding: var(--spacing-xxxl) 0;
+    }
+
+    .impacto-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .impacto-card {
+        max-width: 100%;
+    }
+
+    .impacto-visual {
+        min-height: 12rem;
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .impacto-icon-wrapper {
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    .impacto-icon-wrapper svg {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .impacto-content {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .impacto-title {
+        font-size: var(--font-size-h5);
+    }
+
+    .impacto-description {
+        font-size: var(--font-size-sm);
+    }
+
+    .impacto-details li {
+        font-size: var(--font-size-xs);
+    }
+
+    .impacto-cta {
+        padding: var(--spacing-lg);
+    }
+
+    .impacto-cta-text {
+        font-size: var(--font-size-base);
+    }
+
+    .btn-lg {
+        width: 100%;
+        max-width: 30rem;
+    }
+}
+
 .footer {
     background: var(--color-surface);
     border-top: 1px solid var(--color-border);
