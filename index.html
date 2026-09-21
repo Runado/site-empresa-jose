@@ -265,16 +265,272 @@
             <a href="#planos" class="btn-primary mt-lg">Quero o chatbot para minha barbearia</a>
         </div>
     </section>
-</section>
 
-    <!-- Plans Comparison Section -->
+    <!-- Premium Chatbot Differentiator Section -->
+    <section class="premium-chatbot" id="premium-chatbot">
+        <div class="container">
+            <div class="premium-chatbot-badge">
+                <span class="badge badge-accent badge-lg">Diferencial Exclusivo</span>
+            </div>
+            <h2 class="section-title premium-chatbot-title">Seu WhatsApp também trabalha por você.</h2>
+            <p class="section-subtitle premium-chatbot-subtitle">
+                Não é apenas um chatbot de perguntas e respostas. É um agente de agendamento que executa todo o processo — do primeiro "oi" à confirmação na agenda — sem você levantar um dedo.
+            </p>
+            
+            <!-- Visual Journey -->
+            <div class="journey-visual">
+                <div class="journey-step">
+                    <div class="journey-icon" data-feather="user"></div>
+                    <span class="journey-label">Cliente</span>
+                </div>
+                <div class="journey-arrow" data-feather="chevron-down"></div>
+                <div class="journey-step">
+                    <div class="journey-icon whatsapp-icon" data-feather="message-square"></div>
+                    <span class="journey-label">WhatsApp</span>
+                </div>
+                <div class="journey-arrow" data-feather="chevron-down"></div>
+                <div class="journey-step">
+                    <div class="journey-icon bot-icon" data-feather="cpu"></div>
+                    <span class="journey-label">Chatbot</span>
+                </div>
+                <div class="journey-arrow" data-feather="chevron-down"></div>
+                <div class="journey-step">
+                    <div class="journey-icon" data-feather="database"></div>
+                    <span class="journey-label">Sistema de<br>gestão</span>
+                </div>
+                <div class="journey-arrow" data-feather="chevron-down"></div>
+                <div class="journey-step">
+                    <div class="journey-icon" data-feather="calendar"></div>
+                    <span class="journey-label">Agenda</span>
+                </div>
+                <div class="journey-arrow" data-feather="chevron-down"></div>
+                <div class="journey-step journey-final">
+                    <div class="journey-icon success-icon" data-feather="check-circle"></div>
+                    <span class="journey-label">Agendamento<br>confirmado</span>
+                </div>
+            </div>
+
+            <!-- Chatbot Capabilities -->
+            <div class="chatbot-capabilities">
+                <h3 class="capabilities-title">O que o chatbot faz por você:</h3>
+                <div class="capabilities-grid">
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="inbox"></div>
+                        <h4>Recebe solicitações</h4>
+                        <p>Entende linguagem natural e identifica a intenção do cliente na primeira mensagem.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="list"></div>
+                        <h4>Apresenta serviços</h4>
+                        <p>Mostra seu catálogo com descrições, duração e preços de forma organizada.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="clock"></div>
+                        <h4>Consulta disponibilidade</h4>
+                        <p>Verifica horários livres em tempo real no seu sistema de gestão.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="calendar"></div>
+                        <h4>Apresenta horários</h4>
+                        <p>Oferece opções de data e hora formatadas para escolha fácil no WhatsApp.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="users"></div>
+                        <h4>Permite escolha do barbeiro</h4>
+                        <p>Cliente seleciona seu profissional preferido ou o primeiro horário disponível.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="check-square"></div>
+                        <h4>Realiza o agendamento</h4>
+                        <p>Confirma tudo com o cliente e bloqueia o horário na agenda instantaneamente.</p>
+                    </div>
+                    <div class="capability-card">
+                        <div class="capability-icon" data-feather="link"></div>
+                        <h4>Integra ao sistema</h4>
+                        <p>Sincroniza automaticamente: agenda, financeiro, comissões e histórico do cliente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Conversation Demo -->
+            <div class="chat-demo">
+                <div class="chat-demo-header">
+                    <span class="chat-demo-title">Demonstração de conversa real</span>
+                    <span class="chat-demo-badge">Simulação</span>
+                </div>
+                <div class="chat-demo-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <p>Olá! 👋 Sou o assistente virtual da <strong>Barbearia Estilo</strong>. Como posso ajudar você hoje?</p>
+                                <div class="quick-replies">
+                                    <button class="quick-reply" data-action="agendar">📅 Agendar horário</button>
+                                    <button class="quick-reply" data-action="servicos">💇 Ver serviços</button>
+                                    <button class="quick-reply" data-action="horarios">🕐 Meus agendamentos</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message user-message">
+                            <div class="message-bubble user-bubble">
+                                <p>Quero agendar um corte</p>
+                            </div>
+                        </div>
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <p>Perfeito! Temos estes serviços disponíveis:</p>
+                                <div class="service-options">
+                                    <button class="service-option" data-service="corte">
+                                        <span class="service-name">Corte de cabelo</span>
+                                        <span class="service-duration">30 min • R$ 35,00</span>
+                                    </button>
+                                    <button class="service-option" data-service="barba">
+                                        <span class="service-name">Barba</span>
+                                        <span class="service-duration">20 min • R$ 25,00</span>
+                                    </button>
+                                    <button class="service-option selected" data-service="combo">
+                                        <span class="service-name">Corte + Barba</span>
+                                        <span class="service-duration">45 min • R$ 55,00</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message user-message">
+                            <div class="message-bubble user-bubble">
+                                <p>Corte + Barba, por favor</p>
+                            </div>
+                        </div>
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <p>Ótima escolha! 🎯 Agora, qual barbeiro você prefere?</p>
+                                <div class="barber-options">
+                                    <button class="barber-option" data-barber="joao">
+                                        <div class="barber-avatar"></div>
+                                        <div class="barber-info">
+                                            <span class="barber-name">João Silva</span>
+                                            <span class="barber-specialty">Especialista em degradê</span>
+                                        </div>
+                                    </button>
+                                    <button class="barber-option" data-barber="carlos">
+                                        <div class="barber-avatar"></div>
+                                        <div class="barber-info">
+                                            <span class="barber-name">Carlos Mendes</span>
+                                            <span class="barber-specialty">Barba e bigode</span>
+                                        </div>
+                                    </button>
+                                    <button class="barber-option selected" data-barber="qualquer">
+                                        <div class="barber-avatar"></div>
+                                        <div class="barber-info">
+                                            <span class="barber-name">Qualquer disponível</span>
+                                            <span class="barber-specialty">Primeiro horário livre</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message user-message">
+                            <div class="message-bubble user-bubble">
+                                <p>João Silva</p>
+                            </div>
+                        </div>
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <p>Consultando a agenda do João... 📅</p>
+                                <div class="loading-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <p>João tem estes horários livres para <strong>Corte + Barba (45 min)</strong>:</p>
+                                <div class="time-slots">
+                                    <button class="time-slot" data-time="14:00">📅 Hoje, 14:00</button>
+                                    <button class="time-slot" data-time="15:30">📅 Hoje, 15:30</button>
+                                    <button class="time-slot selected" data-time="17:00">📅 Hoje, 17:00</button>
+                                    <button class="time-slot" data-time="10:00">📅 Amanhã, 10:00</button>
+                                    <button class="time-slot" data-time="14:30">📅 Amanhã, 14:30</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message user-message">
+                            <div class="message-bubble user-bubble">
+                                <p>17:00 hoje</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble confirming">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <div class="confirmation-summary">
+                                    <div class="confirmation-row"><span data-feather="user"></span> <strong>Cliente:</strong> José Lucas</div>
+                                    <div class="confirmation-row"><span data-feather="scissors"></span> <strong>Serviço:</strong> Corte + Barba</div>
+                                    <div class="confirmation-row"><span data-feather="user-check"></span> <strong>Barbeiro:</strong> João Silva</div>
+                                    <div class="confirmation-row"><span data-feather="calendar"></span> <strong>Data:</strong> Hoje, 17:00</div>
+                                    <div class="confirmation-row"><span data-feather="dollar-sign"></span> <strong>Valor:</strong> R$ 55,00</div>
+                                </div>
+                                <p class="confirmation-question">Confirmar este agendamento?</p>
+                                <div class="confirmation-buttons">
+                                    <button class="btn-confirm" data-action="confirm">✅ Confirmar</button>
+                                    <button class="btn-cancel" data-action="cancel">❌ Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-message user-message">
+                            <div class="message-bubble user-bubble">
+                                <p>Confirmar</p>
+                            </div>
+                        </div>
+                        <div class="chat-message bot-message">
+                            <div class="message-avatar bot-avatar" data-feather="bot"></div>
+                            <div class="message-bubble success">
+                                <span class="message-sender">NaRegua Bot</span>
+                                <div class="success-icon-large" data-feather="check-circle"></div>
+                                <p><strong>Agendamento confirmado! ✅</strong></p>
+                                <p>Seu horário está garantido para <strong>hoje às 17:00</strong> com o João Silva.</p>
+                                <div class="success-details">
+                                    <p>📱 Você receberá um lembrete 1 hora antes.</p>
+                                    <p>🔄 Para reagendar ou cancelar, é só me chamar aqui.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <div class="chat-input-wrapper">
+                            <input type="text" class="chat-input" placeholder="Digite uma mensagem..." disabled>
+                            <button class="chat-send-btn" data-feather="send" disabled></button>
+                        </div>
+                        <p class="chat-disclaimer">Esta é uma simulação. No plano Premium, o chatbot opera 24/7 conectado ao seu sistema real.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="premium-chatbot-cta">
+                <a href="#planos" class="btn-primary btn-xl premium-cta-btn">Quero automatizar meus agendamentos</a>
+                <p class="premium-plan-note"><span class="highlight">Disponível no plano Premium e Pro.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos Section -->
     <section class="planos" id="planos">
         <div class="container">
-            <h2 class="section-title">Escolha o plano ideal para sua barbearia</h2>
-            <p class="section-subtitle">
-                Todos os planos incluem acesso completo ao sistema, suporte e atualizações. Escolha aquele que melhor se adapta ao tamanho e necessidades do seu negócio.
-            </p>
-            <div class="planos-cards">
+            <div class="planos-header">
+                <h2 class="section-title">Planos que cabem no seu bolso</h2>
+                <p class="section-subtitle">Escolha o plano ideal para o tamanho da sua barbearia. Sem surpresas, sem fidelidade.</p>
+            </div>
+            <div class="planos-grid">
                 <!-- Standard Plan -->
                 <div class="plano-card">
                     <div class="plano-header">
@@ -293,7 +549,9 @@
                             <li><span data-feather="x"></span>Reuniões 1:1 com a equipe</li>
                         </ul>
                     </div>
-                    <a href="#signup" class="btn-plano">Escolher este plano</a>
+                    <div class="plano-footer">
+                        <a href="#signup" class="btn-plano">Escolher este plano</a>
+                    </div>
                 </div>
                 <!-- Premium Plan -->
                 <div class="plano-card destacado">
@@ -314,7 +572,9 @@
                             <li><span data-feather="x"></span>Reuniões 1:1 com a equipe</li>
                         </ul>
                     </div>
-                    <a href="#signup" class="btn-plano">Escolher este plano</a>
+                    <div class="plano-footer">
+                        <a href="#signup" class="btn-plano">Escolher este plano</a>
+                    </div>
                 </div>
                 <!-- Pro Plan -->
                 <div class="plano-card">
@@ -332,13 +592,14 @@
                             <li><span data-feather="check"></span>Suporte dedicado</li>
                         </ul>
                     </div>
-                    <a href="#signup" class="btn-plano">Escolher este plano</a>
+                    <div class="plano-footer">
+                        <a href="#signup" class="btn-plano">Escolher este plano</a>
+                    </div>
                 </div>
             </div>
             <p class="planos-note">*Todos os valores em reais brasileiros. Planos cobrados mensalmente. Cancelamento a qualquer momento.</p>
         </div>
     </section>
-</section>
 
     <!-- Pro Differencial Section -->
     <section class="pro-diferencial" id="pro">
@@ -369,7 +630,6 @@
             </div>
         </div>
     </section>
-</section>
 
     <!-- Benefits Section -->
     <section class="beneficios" id="beneficios">
@@ -472,8 +732,61 @@
     </section>
 
     <!-- Footer -->
-</script>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="NaRegua Logo" class="logo-icon">
+                        <span class="logo-text">NaRegua</span>
+                    </div>
+                    <p>Sistema de gestão completo para barbearia. Simplifique seu dia a dia e foque no que importa: seus clientes.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <ul>
+                            <li><a href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a href="#planos">Planos</a></li>
+                            <li><a href="#demo">Demonstração</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de ajuda</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Conecte-se</h4>
+                        <ul>
+                            <li><a href="#">WhatsApp</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NaRegua. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Signup Section (Modal-like) -->
     <section class="signup-section" id="signup">
         <div class="container">
@@ -506,38 +819,6 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="logo">
-                        <span class="logo-icon" data-feather="scissors"></span>
-                        <span class="logo-text">BarberFlow</span>
-                    </div>
-                    <p>Sistema de gestão feito para barbearias brasileiras</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h3>Produto</h3>
-                        <ul>
-                            <li><a href="#funcionalidades">Funcionalidades</a></li>
-                            <li><a href="#whatsapp">WhatsApp Chatbot</a></li>
-                            <li><a href="#planos">Planos</a></li>
-                            <li><a href="#demo">Demonstração</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Empresa</h3>
-                        <ul>
-                            <li><a href="#">Sobre nós</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Carreiras</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Legal</h3>
-</footer>
 
     <script>
         // Initialize Feather icons
@@ -633,24 +914,3 @@
     </script>
 </body>
 </html>
-                        <ul>
-                            <li><a href="#">Política de privacidade</a></li>
-                            <li><a href="#">Termos de uso</a></li>
-                            <li><a href="#">Segurança</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h3>Follow us</h3>
-                        <div class="social-links">
-                            <a href="#" data-feather="instagram"></a>
-                            <a href="#" data-feather="youtube"></a>
-                            <a href="#" data-feather="twitter"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 NaRegua. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
